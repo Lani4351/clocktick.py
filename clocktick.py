@@ -9,12 +9,12 @@
 
 # get user input  for start  time and add time
 user_time = input("Welcome to Clock Tick, please enter a set time in HH:MM format: ")
-add_time = int(input("Please enter how  much  time you would like to  add: "))
+add_time = int(input("Please enter how much time you would like to add: "))
 # split the hours and minutes to create HH:MM format
-h,  m =  user_time.split(":")
-h  = int(h)
-m = int(m)
-# this adds the new min to start min
+hours,  minutes =  user_time.split(":")
+h  = int(hours)
+m = int(minutes)
+# this adds the new min to starting min
 m  =  m  + add_time
 # this  creates the  minute loop  as  well as changing the hour
 if m >= 60:
