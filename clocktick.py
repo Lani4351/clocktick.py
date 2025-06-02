@@ -11,6 +11,8 @@
 user_time = input("Welcome to Clock Tick, please enter a set time in HH:MM format: ")
 add_time = int(input("Please enter how much time you would like to add: "))
 # split the hours and minutes to create HH:MM format
+# i used the google ai suggestion to figure out how to separate the two
+# into HH:MM format
 hours,  minutes =  user_time.split(":")
 h  = int(hours)
 m = int(minutes)
@@ -25,14 +27,3 @@ if h > 12:
     h = h // 12
 # print the new time
 print(f"In {add_time} minutes, it will be : {h:02}:{m:02}")
-
-
-
-
-
-
-
-
-
-
-
